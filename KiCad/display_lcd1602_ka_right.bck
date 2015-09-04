@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0  Date: 10/07/2015 22:10:48
+#
+$CMP DISPLAY_LCD1602_KA_RIGHT
+D DISPLAY LCD 16X2
+K DISPLAY LCD 16-1-K-A
+F http://www.sparkfun.com/datasheets/LCD/HD44780.pdf
+$ENDCMP
+#
+#End Doc Library

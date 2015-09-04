@@ -1,0 +1,768 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F628A ]
+[d frameptr 6 ]
+"40 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\buttons.c
+[v _wait_button wait_button `(uc  1 e 1 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 0 0 ]
+"24
+[v _memcpyee memcpyee `(v  1 e 0 0 ]
+"3 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\coges.c
+[v _byte_code byte_code `(v  1 e 0 0 ]
+"29
+[v _coges_money_code coges_money_code `(v  1 e 0 0 ]
+"75
+[v _coges_money_value coges_money_value `(v  1 e 0 0 ]
+"96
+[v _coges_val_to_string coges_val_to_string `(v  1 e 0 0 ]
+"49 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\i2c.c
+[v _i2c_Detatch i2c_Detatch `(v  1 e 0 0 ]
+"73
+[v _i2c_send_start i2c_send_start `(v  1 e 0 0 ]
+"111
+[v _i2c_send_stop i2c_send_stop `(v  1 e 0 0 ]
+"144
+[v _i2c_send_bit0 i2c_send_bit0 `(v  1 e 0 0 ]
+"169
+[v _i2c_send_bit1 i2c_send_bit1 `(v  1 e 0 0 ]
+"206
+[v _i2c_read_bit_ack i2c_read_bit_ack `(uc  1 e 1 0 ]
+"3 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\io_pins.c
+[v _iopins_SendSignals iopins_SendSignals `(v  1 e 0 0 ]
+"8
+[v _iopins_init iopins_init `(v  1 e 0 0 ]
+"18
+[v _iopins_set_backlight iopins_set_backlight `(v  1 e 0 0 ]
+"24 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_pulse lcd_pulse `(v  1 e 0 0 ]
+"34
+[v _lcd_pin_lo lcd_pin_lo `(v  1 e 0 0 ]
+"54
+[v _lcd_command lcd_command `(v  1 e 0 0 ]
+"112
+[v _lcd_clear_display lcd_clear_display `(v  1 e 0 0 ]
+"124
+[v _lcd_entry_mode_set lcd_entry_mode_set `(v  1 e 0 0 ]
+"130
+[v _lcd_display_onoff_control lcd_display_onoff_control `(v  1 e 0 0 ]
+"143
+[v _lcd_function_set_8bit lcd_function_set_8bit `(v  1 e 0 0 ]
+"172
+[v _lcd_function_set_4bit lcd_function_set_4bit `(v  1 e 0 0 ]
+"203
+[v _lcd_function_set lcd_function_set `(v  1 e 0 0 ]
+"209
+[v _lcd_set_cg_ram_addr lcd_set_cg_ram_addr `(v  1 e 0 0 ]
+"215
+[v _lcd_set_dd_ram_addr lcd_set_dd_ram_addr `(v  1 e 0 0 ]
+"221
+[v _lcd_write_data lcd_write_data `(v  1 e 0 0 ]
+"414
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+"470
+[v _lcd_goto_home lcd_goto_home `(v  1 e 0 0 ]
+"474
+[v _lcd_goto_xy lcd_goto_xy `(v  1 e 0 0 ]
+"481
+[v _lcd_print_s lcd_print_s `(v  1 e 0 0 ]
+"522
+[v _lcd_set_char lcd_set_char `(v  1 e 0 0 ]
+"5 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\m24c02.c
+[v _m24c02_send_device_sel m24c02_send_device_sel `(v  1 e 0 0 ]
+"33
+[v _m24c02_send_byte m24c02_send_byte `(v  1 e 0 0 ]
+"44
+[v _m24c02_read_byte m24c02_read_byte `(v  1 e 0 0 ]
+"64
+[v _m24c02_set_random_address m24c02_set_random_address `(v  1 e 0 0 ]
+"97
+[v _m24c02_sequential_current_read m24c02_sequential_current_read `(v  1 e 0 0 ]
+"135
+[v _m24c02_sequential_random_read m24c02_sequential_random_read `(v  1 e 0 0 ]
+"166
+[v _m24c02_multibyte_write m24c02_multibyte_write `(v  1 e 0 0 ]
+"40 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _print_err print_err `(v  1 e 0 0 ]
+"75
+[v _write_credito write_credito `(v  1 e 0 0 ]
+"97
+[v _read_credito read_credito `(v  1 e 0 0 ]
+"109
+[v _print_credito print_credito `(v  1 e 0 0 ]
+"156
+[v _sel_credito sel_credito `(v  1 e 0 0 ]
+"220
+[v _exec_function exec_function `(v  1 e 0 0 ]
+"276
+[v _main main `(i  1 e 2 0 ]
+"3 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main_menu.c
+[v _print_btn print_btn `(v  1 e 0 0 ]
+"13
+[v _print_btns print_btns `(v  1 e 0 0 ]
+"22
+[v _print_menu print_menu `(v  1 e 0 0 ]
+"41
+[v _print_display print_display `(v  1 e 0 0 ]
+"10 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\pic_eeprom.c
+[v _pic_eeprom_read pic_eeprom_read `(uc  1 e 1 0 ]
+"17
+[v _pic_eeprom_write pic_eeprom_write `(v  1 e 0 0 ]
+"160 C:\Program Files (x86)\Microchip\xc8\v1.34\include\pic16f628a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"221
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S265 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"324
+[s S274 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S279 . 1 `S265 1 . 1 0 `S274 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES279  1 e 1 @11 ]
+[s S297 . 1 `uc 1 CM 1 0 :3:0 
+`uc 1 CIS 1 0 :1:3 
+`uc 1 C1INV 1 0 :1:4 
+`uc 1 C2INV 1 0 :1:5 
+`uc 1 C1OUT 1 0 :1:6 
+`uc 1 C2OUT 1 0 :1:7 
+]
+"763
+[s S304 . 1 `uc 1 CM0 1 0 :1:0 
+`uc 1 CM1 1 0 :1:1 
+`uc 1 CM2 1 0 :1:2 
+]
+[u S308 . 1 `S297 1 . 1 0 `S304 1 . 1 0 ]
+[v _CMCONbits CMCONbits `VES308  1 e 1 @31 ]
+"881
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"942
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1175
+[v _EEDATA EEDATA `VEuc  1 e 1 @154 ]
+"1181
+[v _EEADR EEADR `VEuc  1 e 1 @155 ]
+[s S884 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+]
+"1200
+[u S889 . 1 `S884 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES889  1 e 1 @156 ]
+"1224
+[v _EECON2 EECON2 `VEuc  1 e 1 @157 ]
+[s S323 . 1 `uc 1 VR 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 VRR 1 0 :1:5 
+`uc 1 VROE 1 0 :1:6 
+`uc 1 VREN 1 0 :1:7 
+]
+"1250
+[s S329 . 1 `uc 1 VR0 1 0 :1:0 
+`uc 1 VR1 1 0 :1:1 
+`uc 1 VR2 1 0 :1:2 
+`uc 1 VR3 1 0 :1:3 
+]
+[u S334 . 1 `S323 1 . 1 0 `S329 1 . 1 0 ]
+[v _VRCONbits VRCONbits `VES334  1 e 1 @159 ]
+"24 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\m24c02.h
+[v _p_24c02_error p_24c02_error `uc  1 e 1 0 ]
+"22 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main_menu.h
+[v _v_menu v_menu `DCC[5][12]uc  1 e 60 0 ]
+"18 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\project.h
+[v _v_buffer v_buffer `[10]uc  1 e 10 0 ]
+"19
+[v _v_credito v_credito `um  1 e 3 0 ]
+"293
+[v _C_PORTB C_PORTB `VEuc  1 e 1 @6 ]
+[s S89 . 1 `uc 1 bit0 1 0 :1:0 
+`uc 1 bit1 1 0 :1:1 
+`uc 1 bit2 1 0 :1:2 
+`uc 1 bit3 1 0 :1:3 
+`uc 1 bit4 1 0 :1:4 
+`uc 1 bit5 1 0 :1:5 
+`uc 1 bit6 1 0 :1:6 
+`uc 1 bit7 1 0 :1:7 
+]
+"299
+[s S98 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 SCL 1 0 :1:2 
+`uc 1 SDA 1 0 :1:3 
+`uc 1 BTNUP 1 0 :1:4 
+`uc 1 BTNDWN 1 0 :1:5 
+`uc 1 BTNENT 1 0 :1:6 
+`uc 1 BACKLIGHT 1 0 :1:7 
+]
+[s S107 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 BUS 1 0 :2:2 
+`uc 1 BTNS 1 0 :3:4 
+`uc 1 . 1 0 :1:7 
+]
+[u S113 . 1 `S89 1 . 1 0 `S98 1 . 1 0 `S107 1 . 1 0 ]
+[v _C_PORTBbits C_PORTBbits `VES113  1 e 1 @6 ]
+"308
+[v _SR_PORTA SR_PORTA `VEuc  1 e 1 @238 ]
+"309
+[v _SR_PORTB SR_PORTB `VEuc  1 e 1 @239 ]
+"314
+[s S223 . 1 `uc 1 E 1 0 :1:0 
+`uc 1 DB4 1 0 :1:1 
+`uc 1 DB5 1 0 :1:2 
+`uc 1 DB6 1 0 :1:3 
+`uc 1 DB7 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RS 1 0 :1:6 
+`uc 1 RW 1 0 :1:7 
+]
+[s S232 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DATA 1 0 :4:1 
+`uc 1 . 1 0 :3:5 
+]
+[u S236 . 1 `S89 1 . 1 0 `S223 1 . 1 0 `S232 1 . 1 0 ]
+[v _SR_PORTAbits SR_PORTAbits `VES236  1 e 1 @238 ]
+"315
+[v _SR_PORTBbits SR_PORTBbits `VES113  1 e 1 @239 ]
+"330
+[v _C_TRISAbits C_TRISAbits `VES236  1 e 1 @133 ]
+"331
+[v _C_TRISBbits C_TRISBbits `VES113  1 e 1 @134 ]
+"276 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"376
+[v main@v_menu_item v_menu_item `c  1 a 1 22 ]
+"377
+[v main@v_pulsante v_pulsante `uc  1 a 1 21 ]
+"418
+} 0
+"41 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main_menu.c
+[v _print_display print_display `(v  1 e 0 0 ]
+{
+[v print_display@v_menu_item v_menu_item `*.4c  1 a 1 wreg ]
+[v print_display@v_menu_item v_menu_item `*.4c  1 a 1 wreg ]
+"43
+[v print_display@v_menu_item v_menu_item `*.4c  1 a 1 13 ]
+"54
+} 0
+"22
+[v _print_menu print_menu `(v  1 e 0 0 ]
+{
+[v print_menu@v_item v_item `*.4c  1 a 1 wreg ]
+"23
+[v print_menu@v_ind v_ind `c  1 a 1 12 ]
+"22
+[v print_menu@v_item v_item `*.4c  1 a 1 wreg ]
+[v print_menu@v_item v_item `*.4c  1 a 1 11 ]
+"39
+} 0
+"4 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"522 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_set_char lcd_set_char `(v  1 e 0 0 ]
+{
+"525
+[v lcd_set_char@v_ind v_ind `uc  1 a 1 10 ]
+"524
+[v lcd_set_char@v_char v_char `uc  1 a 1 9 ]
+"535
+} 0
+"10 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\pic_eeprom.c
+[v _pic_eeprom_read pic_eeprom_read `(uc  1 e 1 0 ]
+{
+[v pic_eeprom_read@v_addr v_addr `uc  1 a 1 wreg ]
+[v pic_eeprom_read@v_addr v_addr `uc  1 a 1 wreg ]
+[v pic_eeprom_read@v_addr v_addr `uc  1 a 1 0 ]
+"15
+} 0
+"209 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_set_cg_ram_addr lcd_set_cg_ram_addr `(v  1 e 0 0 ]
+{
+[v lcd_set_cg_ram_addr@ram_addr ram_addr `uc  1 a 1 wreg ]
+[v lcd_set_cg_ram_addr@ram_addr ram_addr `uc  1 a 1 wreg ]
+"211
+[v lcd_set_cg_ram_addr@ram_addr ram_addr `uc  1 a 1 7 ]
+"213
+} 0
+"414
+[v _lcd_init lcd_init `(v  1 e 0 0 ]
+{
+"438
+} 0
+"143
+[v _lcd_function_set_8bit lcd_function_set_8bit `(v  1 e 0 0 ]
+{
+"171
+} 0
+"172
+[v _lcd_function_set_4bit lcd_function_set_4bit `(v  1 e 0 0 ]
+{
+"200
+} 0
+"203
+[v _lcd_function_set lcd_function_set `(v  1 e 0 0 ]
+{
+[v lcd_function_set@DL DL `uc  1 a 1 wreg ]
+[v lcd_function_set@DL DL `uc  1 a 1 wreg ]
+[v lcd_function_set@N N `uc  1 p 1 7 ]
+[v lcd_function_set@F F `uc  1 p 1 8 ]
+"205
+[v lcd_function_set@DL DL `uc  1 a 1 11 ]
+"207
+} 0
+"124
+[v _lcd_entry_mode_set lcd_entry_mode_set `(v  1 e 0 0 ]
+{
+[v lcd_entry_mode_set@ID ID `uc  1 a 1 wreg ]
+[v lcd_entry_mode_set@ID ID `uc  1 a 1 wreg ]
+[v lcd_entry_mode_set@S S `uc  1 p 1 7 ]
+"126
+[v lcd_entry_mode_set@ID ID `uc  1 a 1 8 ]
+"128
+} 0
+"8 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\io_pins.c
+[v _iopins_init iopins_init `(v  1 e 0 0 ]
+{
+"16
+} 0
+"49 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\i2c.c
+[v _i2c_Detatch i2c_Detatch `(v  1 e 0 0 ]
+{
+"58
+} 0
+"220 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _exec_function exec_function `(v  1 e 0 0 ]
+{
+[v exec_function@v_item v_item `*.4c  1 a 1 wreg ]
+[v exec_function@v_item v_item `*.4c  1 a 1 wreg ]
+[v exec_function@v_item v_item `*.4c  1 a 1 16 ]
+"272
+} 0
+"75
+[v _write_credito write_credito `(v  1 e 0 0 ]
+{
+"76
+[v write_credito@v_addr v_addr `uc  1 a 1 12 ]
+"75
+[v write_credito@v_credito v_credito `um  1 p 3 7 ]
+"95
+} 0
+"166 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\m24c02.c
+[v _m24c02_multibyte_write m24c02_multibyte_write `(v  1 e 0 0 ]
+{
+[v m24c02_multibyte_write@v_device v_device `uc  1 a 1 wreg ]
+"169
+[v m24c02_multibyte_write@v_ind v_ind `uc  1 a 1 6 ]
+"168
+[v m24c02_multibyte_write@v_ack v_ack `uc  1 a 1 5 ]
+"166
+[v m24c02_multibyte_write@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_multibyte_write@v_addr v_addr `uc  1 p 1 0 ]
+[v m24c02_multibyte_write@v_buffer v_buffer `*.4uc  1 p 1 1 ]
+[v m24c02_multibyte_write@v_byte v_byte `uc  1 p 1 2 ]
+[v m24c02_multibyte_write@p_err p_err `*.4uc  1 p 1 3 ]
+"169
+[v m24c02_multibyte_write@v_device v_device `uc  1 a 1 4 ]
+"190
+} 0
+"29 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\coges.c
+[v _coges_money_code coges_money_code `(v  1 e 0 0 ]
+{
+"45
+[v coges_money_code@v_24b v_24b `um  1 a 3 1 ]
+"43
+[v coges_money_code@v_ind v_ind `c  1 a 1 4 ]
+"44
+[v coges_money_code@v_checksum v_checksum `uc  1 a 1 0 ]
+"29
+[v coges_money_code@v_cred v_cred `um  1 p 3 8 ]
+[v coges_money_code@v_addr v_addr `uc  1 p 1 11 ]
+[v coges_money_code@v_out v_out `*.4uc  1 p 1 12 ]
+"73
+} 0
+"3
+[v _byte_code byte_code `(v  1 e 0 0 ]
+{
+[v byte_code@v_cs v_cs `*.4uc  1 a 1 wreg ]
+"5
+[v byte_code@v_ind v_ind `c  1 a 1 7 ]
+"3
+[v byte_code@v_cs v_cs `*.4uc  1 a 1 wreg ]
+[v byte_code@v_cr v_cr `*.4uc  1 p 1 0 ]
+[v byte_code@v_out v_out `*.4uc  1 p 1 1 ]
+[v byte_code@v_cs v_cs `*.4uc  1 a 1 6 ]
+"27
+} 0
+"156 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _sel_credito sel_credito `(v  1 e 0 0 ]
+{
+[v sel_credito@v_credito v_credito `*.4um  1 a 1 wreg ]
+"164
+[v sel_credito@v_change v_change `uc  1 a 1 10 ]
+"163
+[v sel_credito@v_pulsante v_pulsante `uc  1 a 1 9 ]
+"156
+[v sel_credito@v_credito v_credito `*.4um  1 a 1 wreg ]
+[v sel_credito@v_buffer v_buffer `*.4uc  1 p 1 5 ]
+"164
+[v sel_credito@v_credito v_credito `*.4um  1 a 1 11 ]
+"218
+} 0
+"40 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\buttons.c
+[v _wait_button wait_button `(uc  1 e 1 0 ]
+{
+"41
+[v wait_button@v_pulsanti v_pulsanti `uc  1 a 1 2 ]
+"55
+} 0
+"13 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main_menu.c
+[v _print_btns print_btns `(v  1 e 0 0 ]
+{
+[v print_btns@btn_2 btn_2 `uc  1 a 1 wreg ]
+[v print_btns@btn_2 btn_2 `uc  1 a 1 wreg ]
+[v print_btns@btn_1 btn_1 `uc  1 p 1 11 ]
+[v print_btns@btn_0 btn_0 `uc  1 p 1 12 ]
+[v print_btns@btn_press btn_press `uc  1 p 1 13 ]
+"15
+[v print_btns@btn_2 btn_2 `uc  1 a 1 0 ]
+"20
+} 0
+"3
+[v _print_btn print_btn `(v  1 e 0 0 ]
+{
+[v print_btn@btn btn `uc  1 a 1 wreg ]
+[v print_btn@btn btn `uc  1 a 1 wreg ]
+[v print_btn@btn_press btn_press `uc  1 p 1 8 ]
+"5
+[v print_btn@btn btn `uc  1 a 1 9 ]
+"11
+} 0
+"474 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_goto_xy lcd_goto_xy `(v  1 e 0 0 ]
+{
+[v lcd_goto_xy@v_col v_col `uc  1 a 1 wreg ]
+[v lcd_goto_xy@v_col v_col `uc  1 a 1 wreg ]
+[v lcd_goto_xy@v_row v_row `uc  1 p 1 8 ]
+"476
+[v lcd_goto_xy@v_col v_col `uc  1 a 1 10 ]
+"478
+} 0
+"97 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _read_credito read_credito `(v  1 e 0 0 ]
+{
+[v read_credito@v_credito v_credito `*.4um  1 a 1 wreg ]
+[v read_credito@v_credito v_credito `*.4um  1 a 1 wreg ]
+[v read_credito@v_buffer v_buffer `*.4uc  1 p 1 7 ]
+"101
+[v read_credito@v_credito v_credito `*.4um  1 a 1 8 ]
+"107
+} 0
+"135 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\m24c02.c
+[v _m24c02_sequential_random_read m24c02_sequential_random_read `(v  1 e 0 0 ]
+{
+[v m24c02_sequential_random_read@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_sequential_random_read@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_sequential_random_read@v_addr v_addr `uc  1 p 1 3 ]
+[v m24c02_sequential_random_read@v_buffer v_buffer `*.4uc  1 p 1 4 ]
+[v m24c02_sequential_random_read@v_byte v_byte `uc  1 p 1 5 ]
+[v m24c02_sequential_random_read@p_err p_err `*.4uc  1 p 1 6 ]
+"137
+[v m24c02_sequential_random_read@v_device v_device `uc  1 a 1 12 ]
+"143
+} 0
+"64
+[v _m24c02_set_random_address m24c02_set_random_address `(v  1 e 0 0 ]
+{
+[v m24c02_set_random_address@v_device v_device `uc  1 a 1 wreg ]
+"66
+[v m24c02_set_random_address@v_ack v_ack `uc  1 a 1 10 ]
+"64
+[v m24c02_set_random_address@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_set_random_address@v_addr v_addr `uc  1 p 1 7 ]
+[v m24c02_set_random_address@p_err p_err `*.4uc  1 p 1 8 ]
+[v m24c02_set_random_address@v_device v_device `uc  1 a 1 9 ]
+"92
+} 0
+"33
+[v _m24c02_send_byte m24c02_send_byte `(v  1 e 0 0 ]
+{
+[v m24c02_send_byte@v_data v_data `uc  1 a 1 wreg ]
+"35
+[v m24c02_send_byte@i i `uc  1 a 1 5 ]
+"33
+[v m24c02_send_byte@v_data v_data `uc  1 a 1 wreg ]
+[v m24c02_send_byte@v_data v_data `uc  1 a 1 4 ]
+"42
+} 0
+"97
+[v _m24c02_sequential_current_read m24c02_sequential_current_read `(v  1 e 0 0 ]
+{
+[v m24c02_sequential_current_read@v_device v_device `uc  1 a 1 wreg ]
+"100
+[v m24c02_sequential_current_read@v_ind v_ind `uc  1 a 1 2 ]
+"99
+[v m24c02_sequential_current_read@v_ack v_ack `uc  1 a 1 1 ]
+"97
+[v m24c02_sequential_current_read@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_sequential_current_read@v_buffer v_buffer `*.4uc  1 p 1 7 ]
+[v m24c02_sequential_current_read@v_byte v_byte `uc  1 p 1 8 ]
+[v m24c02_sequential_current_read@p_err p_err `*.4uc  1 p 1 9 ]
+"100
+[v m24c02_sequential_current_read@v_device v_device `uc  1 a 1 0 ]
+"133
+} 0
+"5
+[v _m24c02_send_device_sel m24c02_send_device_sel `(v  1 e 0 0 ]
+{
+[v m24c02_send_device_sel@v_device v_device `uc  1 a 1 wreg ]
+"7
+[v m24c02_send_device_sel@i i `uc  1 a 1 6 ]
+"5
+[v m24c02_send_device_sel@v_device v_device `uc  1 a 1 wreg ]
+[v m24c02_send_device_sel@v_Rw v_Rw `uc  1 p 1 4 ]
+[v m24c02_send_device_sel@v_device v_device `uc  1 a 1 5 ]
+"31
+} 0
+"169 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\i2c.c
+[v _i2c_send_bit1 i2c_send_bit1 `(v  1 e 0 0 ]
+{
+[v i2c_send_bit1@v_byte v_byte `uc  1 a 1 wreg ]
+"172
+[v i2c_send_bit1@v_bit v_bit `uc  1 a 1 3 ]
+"169
+[v i2c_send_bit1@v_byte v_byte `uc  1 a 1 wreg ]
+[v i2c_send_bit1@v_pos v_pos `uc  1 p 1 0 ]
+[v i2c_send_bit1@v_byte v_byte `uc  1 a 1 2 ]
+"195
+} 0
+"44 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\m24c02.c
+[v _m24c02_read_byte m24c02_read_byte `(v  1 e 0 0 ]
+{
+[v m24c02_read_byte@v_out v_out `*.4uc  1 a 1 wreg ]
+"46
+[v m24c02_read_byte@x x `uc  1 a 1 3 ]
+"44
+[v m24c02_read_byte@v_out v_out `*.4uc  1 a 1 wreg ]
+[v m24c02_read_byte@v_last_byte v_last_byte `uc  1 p 1 2 ]
+[v m24c02_read_byte@v_out v_out `*.4uc  1 a 1 4 ]
+"60
+} 0
+"144 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\i2c.c
+[v _i2c_send_bit0 i2c_send_bit0 `(v  1 e 0 0 ]
+{
+[v i2c_send_bit0@v_bit v_bit `uc  1 a 1 wreg ]
+[v i2c_send_bit0@v_bit v_bit `uc  1 a 1 wreg ]
+"149
+[v i2c_send_bit0@v_bit v_bit `uc  1 a 1 1 ]
+"167
+} 0
+"206
+[v _i2c_read_bit_ack i2c_read_bit_ack `(uc  1 e 1 0 ]
+{
+"210
+[v i2c_read_bit_ack@v_out v_out `uc  1 a 1 1 ]
+"249
+} 0
+"111
+[v _i2c_send_stop i2c_send_stop `(v  1 e 0 0 ]
+{
+"134
+} 0
+"73
+[v _i2c_send_start i2c_send_start `(v  1 e 0 0 ]
+{
+"98
+} 0
+"96 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\coges.c
+[v _coges_val_to_string coges_val_to_string `(v  1 e 0 0 ]
+{
+"99
+[v coges_val_to_string@v v `um  1 a 3 1 ]
+"100
+[v coges_val_to_string@c c `uc  1 a 1 4 ]
+"101
+[v coges_val_to_string@v_ind v_ind `uc  1 a 1 0 ]
+"96
+[v coges_val_to_string@v_cred_hex v_cred_hex `um  1 p 3 10 ]
+[v coges_val_to_string@v_out v_out `*.4uc  1 p 1 13 ]
+"129
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ltmod.c
+[v ___ltmod __ltmod `(um  1 e 3 0 ]
+{
+"11
+[v ___ltmod@counter counter `uc  1 a 1 6 ]
+"6
+[v ___ltmod@divisor divisor `um  1 p 3 0 ]
+[v ___ltmod@dividend dividend `um  1 p 3 3 ]
+"26
+} 0
+"6 C:\Program Files (x86)\Microchip\xc8\v1.34\sources\common\ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+{
+"11
+[v ___ltdiv@quotient quotient `um  1 a 3 6 ]
+"12
+[v ___ltdiv@counter counter `uc  1 a 1 9 ]
+"6
+[v ___ltdiv@divisor divisor `um  1 p 3 0 ]
+[v ___ltdiv@dividend dividend `um  1 p 3 3 ]
+"31
+} 0
+"75 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\coges.c
+[v _coges_money_value coges_money_value `(v  1 e 0 0 ]
+{
+[v coges_money_value@v_code v_code `*.4uc  1 a 1 wreg ]
+"83
+[v coges_money_value@v_byte v_byte `uc  1 a 1 11 ]
+"82
+[v coges_money_value@v_ind v_ind `c  1 a 1 10 ]
+"75
+[v coges_money_value@v_code v_code `*.4uc  1 a 1 wreg ]
+[v coges_money_value@v_out v_out `*.4um  1 p 1 0 ]
+"83
+[v coges_money_value@v_code v_code `*.4uc  1 a 1 9 ]
+"94
+} 0
+"40 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\main.c
+[v _print_err print_err `(v  1 e 0 0 ]
+{
+"47
+} 0
+"109
+[v _print_credito print_credito `(v  1 e 0 0 ]
+{
+[v print_credito@v_buffer v_buffer `*.4uc  1 a 1 wreg ]
+[v print_credito@v_buffer v_buffer `*.4uc  1 a 1 wreg ]
+"148
+[v print_credito@v_buffer v_buffer `*.4uc  1 a 1 10 ]
+"154
+} 0
+"481 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_print_s lcd_print_s `(v  1 e 0 0 ]
+{
+[v lcd_print_s@message message `*.26uc  1 p 2 8 ]
+"485
+} 0
+"221
+[v _lcd_write_data lcd_write_data `(v  1 e 0 0 ]
+{
+[v lcd_write_data@data data `uc  1 a 1 wreg ]
+[v lcd_write_data@data data `uc  1 a 1 wreg ]
+"223
+[v lcd_write_data@data data `uc  1 a 1 7 ]
+"225
+} 0
+"470
+[v _lcd_goto_home lcd_goto_home `(v  1 e 0 0 ]
+{
+"472
+} 0
+"215
+[v _lcd_set_dd_ram_addr lcd_set_dd_ram_addr `(v  1 e 0 0 ]
+{
+[v lcd_set_dd_ram_addr@ram_addr ram_addr `uc  1 a 1 wreg ]
+[v lcd_set_dd_ram_addr@ram_addr ram_addr `uc  1 a 1 wreg ]
+"217
+[v lcd_set_dd_ram_addr@ram_addr ram_addr `uc  1 a 1 7 ]
+"219
+} 0
+"112
+[v _lcd_clear_display lcd_clear_display `(v  1 e 0 0 ]
+{
+"116
+} 0
+"17 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\pic_eeprom.c
+[v _pic_eeprom_write pic_eeprom_write `(v  1 e 0 0 ]
+{
+[v pic_eeprom_write@v_addr v_addr `uc  1 a 1 wreg ]
+[v pic_eeprom_write@v_addr v_addr `uc  1 a 1 wreg ]
+[v pic_eeprom_write@v_data v_data `uc  1 p 1 0 ]
+"19
+[v pic_eeprom_write@v_addr v_addr `uc  1 a 1 1 ]
+"27
+} 0
+"130 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\lcd1602.c
+[v _lcd_display_onoff_control lcd_display_onoff_control `(v  1 e 0 0 ]
+{
+[v lcd_display_onoff_control@D D `uc  1 a 1 wreg ]
+[v lcd_display_onoff_control@D D `uc  1 a 1 wreg ]
+[v lcd_display_onoff_control@C C `uc  1 p 1 7 ]
+[v lcd_display_onoff_control@B B `uc  1 p 1 8 ]
+"132
+[v lcd_display_onoff_control@D D `uc  1 a 1 11 ]
+"134
+} 0
+"54
+[v _lcd_command lcd_command `(v  1 e 0 0 ]
+{
+[v lcd_command@RW RW `uc  1 a 1 wreg ]
+"58
+[v lcd_command@v_ind v_ind `c  1 a 1 6 ]
+"57
+[v lcd_command@v_nibble v_nibble `uc  1 a 1 5 ]
+"54
+[v lcd_command@RW RW `uc  1 a 1 wreg ]
+[v lcd_command@RS RS `uc  1 p 1 1 ]
+[v lcd_command@data data `uc  1 p 1 2 ]
+"58
+[v lcd_command@RW RW `uc  1 a 1 4 ]
+"110
+} 0
+"24
+[v _lcd_pulse lcd_pulse `(v  1 e 0 0 ]
+{
+"32
+} 0
+"34
+[v _lcd_pin_lo lcd_pin_lo `(v  1 e 0 0 ]
+{
+"52
+} 0
+"18 F:\Elettronica\KEY REFILLER LCD\KEY_REFILLER_LCD.X\io_pins.c
+[v _iopins_set_backlight iopins_set_backlight `(v  1 e 0 0 ]
+{
+[v iopins_set_backlight@v_val v_val `uc  1 a 1 wreg ]
+[v iopins_set_backlight@v_val v_val `uc  1 a 1 wreg ]
+"20
+[v iopins_set_backlight@v_val v_val `uc  1 a 1 0 ]
+"24
+} 0
+"3
+[v _iopins_SendSignals iopins_SendSignals `(v  1 e 0 0 ]
+{
+"6
+} 0

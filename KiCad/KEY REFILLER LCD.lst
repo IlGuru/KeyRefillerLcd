@@ -1,0 +1,46 @@
+eeschema (2013-07-07 BZR 4022)-stable  >> Creation date: 11/07/2015 03:54:53
+#Cmp ( ordine = Riferimento )
+| BTN0       SW_PUSH_SMALL
+| BTN1       SW_PUSH_SMALL
+| BTN2       SW_PUSH_SMALL
+| C1         100nF       
+| C2         100nF       
+| C3         220pF       
+| C4         220pF       
+| D1         1N4148      
+| D_LCD1     DISPLAY_LCD1602_KA_RIGHT
+| P1         POWER       
+| P2         I2C         
+| P3         BUTTONS     
+| P4         BUTTONS     
+| Q1         2N2222      
+| RESET1     SW_PUSH_SMALL
+| RR1        10K         
+| RR2        10K         
+| RV1        10K         
+| U1         PIC16F628A  
+#End Cmp
+
+#Cmp ( ordine = Valore )
+| SW_PUSH_SMALL BTN0      
+| SW_PUSH_SMALL BTN1      
+| SW_PUSH_SMALL BTN2      
+| 220pF        C3        
+| 220pF        C4        
+| 100nF        C1        
+| 100nF        C2        
+| 1N4148       D1        
+| POWER        P1        
+| DISPLAY_LCD1602_KA_RIGHT D_LCD1    
+| I2C          P2        
+| BUTTONS      P3        
+| BUTTONS      P4        
+| 2N2222       Q1        
+| SW_PUSH_SMALL RESET1    
+| 10K          RR1       
+| 10K          RR2       
+| 10K          RV1       
+| PIC16F628A   U1        
+#Fine Cmp
+
+#Fine Lista

@@ -1,0 +1,136 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 11/07/2015 03:07:10
+
+BeginCmp
+TimeStamp = /55A030EB;
+Reference = BTN0;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A030F8;
+Reference = BTN1;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A030FE;
+Reference = BTN2;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A034D3;
+Reference = C1;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A03116;
+Reference = C2;
+ValeurCmp = 100nF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A040EA;
+Reference = C3;
+ValeurCmp = 220pF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A040F0;
+Reference = C4;
+ValeurCmp = 220pF;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A04355;
+Reference = D1;
+ValeurCmp = 1N4148;
+IdModule  = D5;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A028D6;
+Reference = D_LCD1;
+ValeurCmp = DISPLAY_LCD1602_KA_RIGHT;
+IdModule  = PIN_ARRAY_16X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A03763;
+Reference = P1;
+ValeurCmp = POWER;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A03EF3;
+Reference = P2;
+ValeurCmp = I2C;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A068B8;
+Reference = P3;
+ValeurCmp = BUTTONS;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A06CBE;
+Reference = P4;
+ValeurCmp = BUTTONS;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A02ADF;
+Reference = Q1;
+ValeurCmp = 2N2222;
+IdModule  = TO18EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A03104;
+Reference = RESET1;
+ValeurCmp = SW_PUSH_SMALL;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A02CEC;
+Reference = RR1;
+ValeurCmp = 10K;
+IdModule  = r_pack8;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A02CF9;
+Reference = RR2;
+ValeurCmp = 10K;
+IdModule  = r_pack8;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A02B75;
+Reference = RV1;
+ValeurCmp = 10K;
+IdModule  = POT_4x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55A01A74;
+Reference = U1;
+ValeurCmp = PIC16F628A;
+IdModule  = DIP-18__300_ELL;
+EndCmp
+
+EndListe
